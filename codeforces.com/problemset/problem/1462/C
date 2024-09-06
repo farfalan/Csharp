@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		var x = 35;
+		var tempMinNumb = (x - 1).ToString() + "1";
+		var numFromDigit  ="";
+		for (int i=1; i< x ; i++){
+		numFromDigit = (x-i).ToString() + i.ToString();
+
+			if (Int32.Parse(numFromDigit) < Int32.Parse(tempMinNumb)) {tempMinNumb = numFromDigit;};
+
+		Console.WriteLine(numFromDigit);
+			
+		
+		
+		}	
+		Console.WriteLine(tempMinNumb);	
+		
+	}
+}
